@@ -1,3 +1,28 @@
-body{
-    font-family: font-family: "Viaoda Libre", serif;
+body {
+  background-color: #6495ed;
+  font-family: "Viaoda Libre", serif;
+}
+.application-content {
+  background-color: #faebd7;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 30px 50px rgba(100, 149, 237, 0.08);
+  border-radius: 15px;
+  padding: 30px;
+}
+.search-input {
+  background-color: #faebd7;
+  border: none;
+  border-radius: 8px;
+  width: 80%;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.search-button {
+  background-color: #6495ed;
+  border: none;
+  border-radius: 8px;
+  color: #faebd7;
+  padding: 10px 20px;
+  margin-left: 5px;
 }
