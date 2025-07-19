@@ -32,13 +32,16 @@
           <div>
             <h1 class="current-city" id="current-city">Sydney</h1>
             <p class="current-weather-details">
-              Tuesday 14:49, scattered clouds
+              <span id="date-time">day and time</span>,
+              <span id="weather-description"></span>
               <br />
-              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+              Humidity: <span id="humidity"><strong>66%</strong></span
+              >, Wind:
+              <span id="wind"><strong>35km/h</strong></span>
             </p>
           </div>
           <div class="temperature-container">
-            <div class="temperature-icon">🌤️</div>
+            <div class="temperature-icon" id="temperature-icon">🌤️</div>
             <div class="temperature-current" id="temperature-current">12</div>
             <div class="temperature-unit">°C</div>
           </div>
