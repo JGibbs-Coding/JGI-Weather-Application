@@ -2,6 +2,15 @@ body {
   background-color: cornflowerblue;
   font-family: "Viaoda Libre", serif;
 }
+
+a {
+  color: cornflowerblue;
+}
+
+header {
+  padding: 0 0 20px;
+}
+
 .application-content {
   background-color: aliceblue;
   max-width: 600px;
@@ -10,19 +19,68 @@ body {
   border-radius: 10px;
   padding: 30px;
 }
-.search-form-input {
-  background-color: floralwhite;
+.search-input {
+  background-color: white;
   border: none;
   border-radius: 10px;
-  width: 75%;
+  width: 80%;
   font-size: 14px;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
-.search-form-button {
-  background: cornflowerblue;
-  padding: 10px 20px;
+.search-button {
+  background-color: cornflowerblue;
   border: none;
   border-radius: 10px;
-  color: floralwhite;
+  font-size: 14px;
+  padding: 15px 20px;
+  color: white;
   margin-left: 5px;
+}
+
+.application-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  padding: 20px 0 0 0;
+}
+
+.temperature-container {
+  display: flex;
+}
+
+.temperature-icon {
+  font-size: 45px;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+.temperature-current {
+  font-weight: bold;
+  font-size: 60px;
+}
+.temperature-unit {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.current-city {
+  margin: 0;
+  font-size: 35px;
+  line-height: 45px;
+}
+.current-weather-details {
+  font-size: 14px;
+  color: cornflowerblue;
+  line-height: 20px;
+}
+
+.current-weather-details strong {
+  color: crimson;
+}
+
+footer {
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 12px;
 }
