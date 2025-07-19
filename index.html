@@ -15,19 +15,20 @@
   <body>
     <div class="application-content">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter name of city"
             required
-            class="search-form-input"
+            id="search-input"
+            class="search-input"
           />
-          <input type="submit" value="Search" class="search-form-button" />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
         <div>
-          <h1>San Francisco</h1>
+          <h1 class="current-city" id="current-city">Sydney</h1>
           <p>
             Tuesday, 14.20, scattered clouds<br />
             Humidity: 63%, Wind: 2.68km/h
@@ -57,5 +58,6 @@
         </p>
       </footer>
     </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
