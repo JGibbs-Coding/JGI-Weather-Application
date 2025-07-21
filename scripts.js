@@ -9,12 +9,28 @@ function updateWeather(response) {
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   let windElement = document.querySelector("#wind");
   wind.innerHTML = `${response.data.wind.speed}km|h`;
-  let dateElement = document.querySelector("#date-time");
+  let new date = (response.data.time * 1000);
   date.innerHTML = "Monday 21 July 2025";
-  let timeElement = document.querySelector("#date-time");
-  time.innerHTML = "11.06";
+
   console.log(response.data);
 }
+function formatDate(date){
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let day = date.getDay();
+  let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+]
+
+}
+
+
 
 function searchCity(city) {
   let apiKey = "7fftc541dbabc3018759foaa254e09a2";
