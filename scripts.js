@@ -9,6 +9,10 @@ function updateWeather(response) {
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   let windElement = document.querySelector("#wind");
   wind.innerHTML = `${response.data.wind.speed}km|h`;
+  let dateElement = document.querySelector("#date-time");
+  date.innerHTML = "Monday 21 July 2025";
+  let timeElement = document.querySelector("#date-time");
+  time.innerHTML = "11.06";
   console.log(response.data);
 }
 
