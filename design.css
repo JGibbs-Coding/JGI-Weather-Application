@@ -52,12 +52,12 @@ main {
 
 .temperature-icon {
   font-size: 45px;
-  margin-top: 22px;
+  margin-top: 10px;
   margin-left: 10px;
 }
 .temperature-current {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 80px;
 }
 .temperature-unit {
   margin-top: 20px;
