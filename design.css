@@ -32,7 +32,7 @@ header {
   border: none;
   border-radius: 10px;
   font-size: 14px;
-  padding: 15px 20px;
+  padding: 15px 30px;
   color: white;
   margin-left: 5px;
 }
@@ -62,6 +62,7 @@ main {
 .temperature-unit {
   margin-top: 20px;
   font-size: 25px;
+  margin-right: 20px;
 }
 
 .current-city {
