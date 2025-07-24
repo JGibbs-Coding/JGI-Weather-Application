@@ -66,13 +66,14 @@ function displayForecast() {
     forecastHtml =
       forecastHtml +
       `
+      <div class="weather-forecast-column">
           <div class="temperature-forecast-day"><strong>${day}</strong></div>
         <div class="temperature-forecast-icon">😊</div>
-        <div class="temperature-forecast-temperatures">
-          
+        <div class="temperature-forecast-temperatures">   
           <div class="temperature-forecast-temperature"><strong>12°</strong></div>
         <div class="temperature-forecast-temperature">12°</div>  
         </div> 
+        </div>
 `;
   });
   forecastElement.innerHTML = forecastHtml;
