@@ -1,18 +1,21 @@
 body {
-  background-color: cornflowerblue;
+  background-color: navy;
   font-family: "Viaoda Libre", serif;
 }
 
 a {
-  color: cornflowerblue;
+  color: navy;
 }
 
+h1 {
+  color: navy;
+}
 header {
   padding: 0 0 20px;
 }
 
 .application-content {
-  background-color: aliceblue;
+  background-color: cornsilk;
   max-width: 600px;
   margin: 30px auto;
   box-shadow: 0 30px 50px rgba(240, 248, 255 0.08);
@@ -28,7 +31,7 @@ header {
   padding: 15px 20px;
 }
 .search-button {
-  background-color: cornflowerblue;
+  background-color: navy;
   border: none;
   border-radius: 10px;
   font-size: 14px;
@@ -67,13 +70,13 @@ main {
 
 .current-city {
   margin: 0;
-  font-size: 35px;
+  font-size: 40px;
   line-height: 45px;
 }
 .current-weather-details {
-  font-size: 14px;
-  color: cornflowerblue;
-  line-height: 20px;
+  font-size: 20px;
+  color: navy;
+  line-height: 30px;
 }
 
 .current-weather-details strong {
@@ -99,8 +102,8 @@ main {
 
 .temperature-forecast-day {
   text-align: center;
-  color: cornflowerblue;
-  font-size: 14px;
+  color: navy;
+  font-size: 20px;
   line-height: 20px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -113,7 +116,7 @@ main {
 
 .temperature-forecast-temperatures {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: crimson;
   display: flex;
   justify-content: center;

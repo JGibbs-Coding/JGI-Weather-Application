@@ -60,7 +60,14 @@ searchFormElement.addEventListener("submit", searchSubmit);
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let days = [
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
   let forecastHtml = "";
   days.forEach(function (day) {
     forecastHtml =
