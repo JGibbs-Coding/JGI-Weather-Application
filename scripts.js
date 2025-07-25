@@ -63,6 +63,13 @@ function getForecast(city) {
   console.log(apiUrl);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[date.getDay()];
+}
+
 function displayForecast(response) {
   console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
@@ -77,7 +84,9 @@ function displayForecast(response) {
         forecastHtml +
         `
       <div class="weather-forecast-column">
-          <div class="temperature-forecast-day"><strong>Tuesday</strong></div>
+          <div class="temperature-forecast-day"><strong>${formatDay(
+            day.time
+          )}</strong></div>
         <div class="temperature-forecast-icon">
         <img src= "${day.condition.icon_url}"/>
  </div>
