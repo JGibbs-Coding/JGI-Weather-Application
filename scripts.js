@@ -71,16 +71,26 @@ function displayForecast(response) {
 
   let forecastHtml = "";
 
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `
       <div class="weather-forecast-column">
-          <div class="temperature-forecast-day"><strong>${day}</strong></div>
-        <div class="temperature-forecast-icon">😊</div>
+          <div class="temperature-forecast-day"><strong>Tuesday</strong></div>
+        <div class="temperature-forecast-icon">
+        <img src= "${day.condition.icon_url}"/>
+ </div>
         <div class="temperature-forecast-temperatures">   
-          <div class="temperature-forecast-temperature"><strong>12°</strong></div>
-        <div class="temperature-forecast-temperature">12°</div>  
+                 <div class="temperature-forecast-temperature">${Math.round(
+                   day.temperature.minimum
+                 )}° 
+                 <div class="temperature-range">min</div>
+                 </div>  
+         <div class="temperature-forecast-temperature"><strong>${Math.round(
+           day.temperature.maximum
+         )}°</strong>
+         <div class="temperature-range">max</div>
+         </div>
         </div> 
         </div>
 `;
